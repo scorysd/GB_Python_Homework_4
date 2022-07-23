@@ -1,0 +1,11 @@
+# Даны два файла, в каждом из которых находится запись многочлена. Задача - сформировать файл, содержащий сумму многочленов.
+exam_1 = open('file1.txt', 'r')
+text_1 = exam_1.read()
+exam_1.close()
+exam_2 = open('file2.txt', 'r')
+text_2 = exam_2.read()
+exam_2.close()
+result = open('file3.txt', 'w')
+result.write(f'{text_1} + {text_2}')
+result.close()
+print(f'Сумма многочлена {text_1} и {text_2} записана в документ "file3.txt"')
